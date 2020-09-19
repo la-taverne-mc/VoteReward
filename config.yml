@@ -1,0 +1,90 @@
+totem_of_undying:
+  amount: 1
+  percent: 0.05
+sea_lantern:
+  amount: 32
+  percent: 0.05
+shulker_shell:
+  amount: 1
+  percent: 0.10
+shulker_box:
+  amount: 1
+  percent: 0.08
+birch_log:
+  amount: 64
+  percent: 0.08
+spruce_log:
+  amount: 64
+  percent: 0.08
+oak_log:
+  amount: 64
+  percent: 0.08
+acacia_log:
+  amount: 64
+  percent: 0.08
+jungle_log:
+  amount: 64
+  percent: 0.08
+dark_oak_log:
+  amount: 64
+  percent: 0.08
+elytra:
+  amount: 1
+  percent: 0.05
+nether_quartz_ore:
+  amount: 64
+  percent: 0.15
+experience_bottle:
+  amount: 32
+  percent: 0.10
+firework_rocket:
+  amount: 64
+  percent: 0.15
+stone:
+  amount: 64
+  percent: 0.15
+iron_ingot:
+  amount: 16
+  percent: 0.20
+gold_ingot:
+  amount: 12
+  percent: 0.10
+diamond:
+  amount: 4
+  percent: 0.05
+grass_block:
+  amount: 64
+  percent: 0.15
+stone_bricks:
+  amount: 32
+  percent: 0.17
+bricks:
+  amount: 32
+  percent: 0.10
+slime_ball:
+  amount: 16
+  percent: 0.10
+stick:
+  amount: 1
+  percent: 0.03
+diamond_block:
+  amount: 1
+  percent: 0.03
+iron_block:
+  amount: 3
+  percent: 0.15
+gold_block:
+  amount: 2
+  percent: 0.10
+bell:
+  amount: 1
+  percent: 0.10
+anvil:
+  amount: 1
+  percent: 0.10
+book:
+  amount: 12
+  percent: 0.15
+diamond_hoe:
+  amount: 1
+  percent: 0.1

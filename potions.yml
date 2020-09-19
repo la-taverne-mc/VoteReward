@@ -1,0 +1,48 @@
+fly:
+  name: "&bPotion de vol 2 minutes 30"
+  type: fly
+  time: 150
+  lore: "&bCette potion est@&bune potion de vol@&bd'une durée de 2 minutes et 30 secondes"
+  percent: 0.18
+fly1:
+  name: "&bPotion de vol 5 minutes"
+  type: fly
+  time: 300
+  lore: "&bCette potion est@&bune potion de vol@&bd'une durée de 5 minutes"
+  percent: 0.13
+fly2:
+  name: "&bPotion de vol 10 minutes"
+  type: fly
+  time: 600
+  lore: "&bCette potion est@&bune potion de vol@&bd'une durée de 10 minutes"
+  percent: 0.10
+fly3:
+  name: "&bPotion de vol 20 minutes"
+  type: fly
+  time: 1200
+  lore: "&bCette potion est@&bune potion de vol@&bd'une durée de 20 minutes"
+  percent: 0.05
+creeper:
+  name: "&bSang de creeper"
+  type: creeper
+  time: 1200
+  lore: "&bCette potion est@&bune potion de creeper@&bd'une durée de 20 minutes"
+  percent: 0.05
+phanthom:
+  name: "&bPotion Anti Phantom"
+  type: phantom
+  time: 1200
+  lore: "&bBoire cette potion vous@&bpermet de ne pas@&bsubir les dégats@&bdes phantoms@&bPendant 20 minutes"
+  percent: 0.17
+mining:
+  name: "&bBreuvage Nain"
+  type: mining
+  time: 1200
+  lore: "&bBoire ce breuvage vous@&bpermettra de miner@&baussi vite qu'un nain"
+  percent: 0.10
+swimming:
+  name: "&bPotion d'Homme-Poisson"
+  type: swimming
+  time: 1200
+  lore: "&bBoire cette potion vous@&bpermettra de devenir@&baussi à l'aise sous l'eau@&bque n'importe quel être@&bsous-marin"
+  percent: 0.10

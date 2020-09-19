@@ -1,0 +1,16 @@
+name: VoteReward
+author: Mecopi
+version: 1.0
+api-version: 1.13
+depends: [Votifier]
+main: fr.mecopi.votereward.Main
+commands:
+  rvitem:
+    description: Permet d'ouvrir l'interface des objets obtenables en votant.
+  rvclear:
+    description: Permet a un joueur de supprimer tout les effets de potions en cours.
+    permission: votereward.effects.clear
+  rvbag:
+    description: Permet de recuperer toutes les recompenses obtenues en votant.
+  fakevote:
+    description: Permet de recuperer une recompenses aleatoire.
