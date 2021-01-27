@@ -144,7 +144,7 @@ public class EventsManager implements Listener
 			}
 		}
 	}
-	@EventHandler
+	@EventHandler(priority = EventPriority.LOWEST)
 	public void onClick(InventoryClickEvent e)
 	{
 		if(e.getWhoClicked() instanceof Player)
@@ -172,7 +172,7 @@ public class EventsManager implements Listener
 		if(VoteManager.getEffectByPlayer(e.getEntity().getUniqueId()) != null)
 			VoteManager.getEffectByPlayer(e.getEntity().getUniqueId()).getTask().disableEffect();
 	}
-	@EventHandler
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onCloseInventory(InventoryCloseEvent e)
 	{
 		if(e.getPlayer() instanceof Player)
