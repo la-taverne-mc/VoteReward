@@ -45,7 +45,7 @@ public class EventsManager implements Listener
 				e.setCancelled(true);
 				Effect playerEffect = VoteManager.getEffectByPlayer(e.getPlayer().getUniqueId());
 				Bukkit.getScheduler().cancelTask(playerEffect.getTask().taskID);
-				VoteManager.sendBarMessage(e.getPlayer(), ChatColor.translateAlternateColorCodes('&', "&cVous êtes déjà sous l'effet d'une potion."));
+				VoteManager.sendBarMessage(e.getPlayer(), ChatColor.translateAlternateColorCodes('&', "&cVous Ãªtes dÃ©jÃ  sous l'effet d'une potion."));
 				playerEffect.setRemainingTime(playerEffect.getRemainingTime() - 2);
 				Bukkit.getScheduler().runTaskLater(Main.Instance, () -> playerEffect.getTask().addTask(playerEffect), (20 * 2));
 			}

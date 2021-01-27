@@ -41,14 +41,14 @@ public class GUIManager
 
 		previousPage = new ItemStack(Material.BOOK, 1);
 		ItemMeta itemMeta = previousPage.getItemMeta();
-		itemMeta.setDisplayName("Revenir à la page précédente");
+		itemMeta.setDisplayName("Revenir Ã  la page prÃ©cÃ©dente");
 		previousPage.setItemMeta(itemMeta);
 
 		//Next Page
 
 		nextPage = new ItemStack(Material.BOOK, 1);
 		itemMeta = nextPage.getItemMeta();
-		itemMeta.setDisplayName("Aller à la page suivante");
+		itemMeta.setDisplayName("Aller Ã  la page suivante");
 		nextPage.setItemMeta(itemMeta);
 
 		//Notice
@@ -56,7 +56,7 @@ public class GUIManager
 		Notice = new ItemStack(Material.BOOK, 1);
 		itemMeta = Notice.getItemMeta();
 		itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&bNotice d'utilisation"));
-		itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "Clic gauche : Ajoute un objet au stack", ChatColor.YELLOW + "Clic droit : Retire un objet au stack", ChatColor.YELLOW + "Clic molette : Retire le stack", ChatColor.YELLOW + "Shift clic gauche : Permet de récupérer un stack dans son propre inventaire", ChatColor.YELLOW + "Shit clic gauche : Permet d'envoyer un stack dans la GUI"));
+		itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "Clic gauche : Ajoute un objet au stack", ChatColor.YELLOW + "Clic droit : Retire un objet au stack", ChatColor.YELLOW + "Clic molette : Retire le stack", ChatColor.YELLOW + "Shift clic gauche : Permet de rÃ©cupÃ©rer un stack dans son propre inventaire", ChatColor.YELLOW + "Shit clic gauche : Permet d'envoyer un stack dans la GUI"));
 		Notice.setItemMeta(itemMeta);
 		
 		showGUI();

@@ -46,7 +46,7 @@ public class Bag
 	{
 		BagClearManager.Task(this);
 		startIndex = 0;
-		GUI = Bukkit.createInventory(Viewer, 6*9, "Sac de récompenses");
+		GUI = Bukkit.createInventory(Viewer, 6*9, "Sac de rÃ©compenses");
 		showGUI();
 		Viewer.openInventory(GUI);
 	}
@@ -64,14 +64,14 @@ public class Bag
 	{
 		ItemStack previousPage = new ItemStack(Material.BOOK, 1);
 		ItemMeta itemMeta = previousPage.getItemMeta();
-		itemMeta.setDisplayName("Revenir à la page précédente");
+		itemMeta.setDisplayName("Revenir Ã  la page prÃ©cÃ©dente");
 		previousPage.setItemMeta(itemMeta);
 
 		//Next Page
 
 		ItemStack nextPage = new ItemStack(Material.BOOK, 1);
 		itemMeta = nextPage.getItemMeta();
-		itemMeta.setDisplayName("Aller à la page suivante");
+		itemMeta.setDisplayName("Aller Ã  la page suivante");
 		nextPage.setItemMeta(itemMeta);
 		
 		if(startIndex > 0) //Is'nt the 1st page
@@ -84,14 +84,14 @@ public class Bag
 	{
 		ItemStack previousPage = new ItemStack(Material.BOOK, 1);
 		ItemMeta itemMeta = previousPage.getItemMeta();
-		itemMeta.setDisplayName("Revenir à la page précédente");
+		itemMeta.setDisplayName("Revenir Ã  la page prÃ©cÃ©dente");
 		previousPage.setItemMeta(itemMeta);
 
 		//Next Page
 
 		ItemStack nextPage = new ItemStack(Material.BOOK, 1);
 		itemMeta = nextPage.getItemMeta();
-		itemMeta.setDisplayName("Aller à la page suivante");
+		itemMeta.setDisplayName("Aller Ã  la page suivante");
 		nextPage.setItemMeta(itemMeta);
 		if(e instanceof InventoryCloseEvent)
 		{
@@ -125,7 +125,7 @@ public class Bag
 		}	
 		else if(e instanceof InventoryClickEvent)
 		{
-			if(((InventoryClickEvent)e).getView().getTitle().equals("Sac de récompenses"))
+			if(((InventoryClickEvent)e).getView().getTitle().equals("Sac de rÃ©compenses"))
 			{
 				if((((InventoryClickEvent)e).getClickedInventory() != null) && !(((InventoryClickEvent)e).getClickedInventory().getType().equals(InventoryType.PLAYER)))
 				{

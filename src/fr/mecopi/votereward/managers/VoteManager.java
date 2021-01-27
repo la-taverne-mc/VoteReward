@@ -227,9 +227,9 @@ public class VoteManager
 		if(Bukkit.getPlayer(Player) != null)
 		{
 			if(repetitionNumber > 1)
-				Bukkit.getPlayer(Player).sendMessage(sendSuccessMessage("Vous avez obtenu ".concat(repetitionNumber + "").concat(" récompenses, consultez votre sac")));
+				Bukkit.getPlayer(Player).sendMessage(sendSuccessMessage("Vous avez obtenu ".concat(repetitionNumber + "").concat(" rÃ©compenses, consultez votre sac")));
 			else
-				Bukkit.getPlayer(Player).sendMessage(sendSuccessMessage("Vous avez obtenu une récompense, consultez votre sac"));
+				Bukkit.getPlayer(Player).sendMessage(sendSuccessMessage("Vous avez obtenu une rÃ©compense, consultez votre sac"));
 		}
 	}
 }

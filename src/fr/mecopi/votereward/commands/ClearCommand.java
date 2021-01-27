@@ -24,10 +24,10 @@ public class ClearCommand implements CommandExecutor
 				VoteManager.potionEffects.clear();
 				FileManager.saveEffects();
 				Bukkit.getScheduler().cancelTasks(Main.Instance);
-				player.sendMessage(VoteManager.sendSuccessMessage("Tout les effets de potions ont été supprimés."));
+				player.sendMessage(VoteManager.sendSuccessMessage("Tout les effets de potions ont Ã©tÃ© supprimÃ©s."));
 			}
 			else
-				player.sendMessage(VoteManager.sendErrorMessage("Vous n'avez pas la permission de faire ça."));
+				player.sendMessage(VoteManager.sendErrorMessage("Vous n'avez pas la permission de faire Ã§a."));
 		}
 		return false;
 	}

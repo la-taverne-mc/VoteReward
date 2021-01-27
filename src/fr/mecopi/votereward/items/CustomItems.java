@@ -68,7 +68,7 @@ public class CustomItems
 		goblinPickaxe = new ItemStack(Material.GOLDEN_PICKAXE);
 		ItemMeta gPItemMeta = goblinPickaxe.getItemMeta();
 		gPItemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&bPioche de Gobelin"));
-		gPItemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "Cette pioche vous confère", ChatColor.YELLOW + "une précision accrue et", ChatColor.YELLOW + "vous permet d'extraire", ChatColor.YELLOW + "des minéraux précieux", ChatColor.YELLOW + "des roches"));
+		gPItemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "Cette pioche vous confÃ¨re", ChatColor.YELLOW + "une prÃ©cision accrue et", ChatColor.YELLOW + "vous permet d'extraire", ChatColor.YELLOW + "des minÃ©raux prÃ©cieux", ChatColor.YELLOW + "des roches"));
 		gPItemMeta.setCustomModelData(1);
 		goblinPickaxe.setItemMeta(gPItemMeta);
 		VoteManager.droppableItemsList.add(new DroppableItem(goblinPickaxe, 0.15));
@@ -81,8 +81,8 @@ public class CustomItems
         itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(UUID.fromString("ec3474c3-b57c-4fbf-ba1f-a7c5ac9292c5"), "generic.armor", 1, Operation.ADD_NUMBER, EquipmentSlot.FEET));
 		itemMeta.addAttributeModifier(Attribute.GENERIC_MOVEMENT_SPEED, new AttributeModifier(UUID.fromString("dcc66b53-a22c-48cc-afbd-274a02967392"), "generic.movementSpeed", 0.75, Operation.MULTIPLY_SCALAR_1, EquipmentSlot.FEET));
 		itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
-		itemMeta.setDisplayName("§bBottes de Géant");
-		itemMeta.setLore(Arrays.asList("§eCes bottes semblent émettre", "§eune certaine forme de magie", "§eet vous permettraient", "§ed'aller plus vite", "", "§cAttention la durabilité", "§cbaisse avec la distance", "§cparcourue"));
+		itemMeta.setDisplayName("Â§bBottes de GÃ©ant");
+		itemMeta.setLore(Arrays.asList("Â§eCes bottes semblent Ã©mettre", "Â§eune certaine forme de magie", "Â§eet vous permettraient", "Â§ed'aller plus vite", "", "Â§cAttention la durabilitÃ©", "Â§cbaisse avec la distance", "Â§cparcourue"));
         itemMeta.setCustomModelData(1);
 		giantBoots.setItemMeta(itemMeta);
         VoteManager.droppableItemsList.add(new DroppableItem(giantBoots, 0.05));
@@ -95,7 +95,7 @@ public class CustomItems
         itemMeta.addEnchant(Enchantment.DURABILITY, 20, true);
         itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
         itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-		itemMeta.setLore(Arrays.asList(ChatColor.GRAY + "Solidité XX"));
+		itemMeta.setLore(Arrays.asList(ChatColor.GRAY + "SoliditÃ© XX"));
 		unbreakingHoe.setItemMeta(itemMeta);
         VoteManager.droppableItemsList.add(new DroppableItem(unbreakingHoe, 0.01));
 	}
@@ -104,7 +104,7 @@ public class CustomItems
 		mendingBook = new ItemStack(Material.ENCHANTED_BOOK);
         EnchantmentStorageMeta itemMeta =  (EnchantmentStorageMeta)mendingBook.getItemMeta();
         itemMeta.addEnchant(Enchantment.MENDING, 3, false);
-        itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "Enchanté avec Raccommodage"));
+        itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "EnchantÃ© avec Raccommodage"));
 		mendingBook.setItemMeta(itemMeta);
         VoteManager.droppableItemsList.add(new DroppableItem(mendingBook, 0.04));
 	}
@@ -113,7 +113,7 @@ public class CustomItems
 		fortuneBook = new ItemStack(Material.ENCHANTED_BOOK);
         EnchantmentStorageMeta itemMeta =  (EnchantmentStorageMeta)fortuneBook.getItemMeta();
         itemMeta.addEnchant(Enchantment.LOOT_BONUS_BLOCKS, 3, false);
-        itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "Enchanté avec Fortune"));
+        itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "EnchantÃ© avec Fortune"));
 		fortuneBook.setItemMeta(itemMeta);
         VoteManager.droppableItemsList.add(new DroppableItem(fortuneBook, 0.07));
 	}
@@ -122,7 +122,7 @@ public class CustomItems
 		silkTouchBook = new ItemStack(Material.ENCHANTED_BOOK);
         EnchantmentStorageMeta itemMeta =  (EnchantmentStorageMeta)silkTouchBook.getItemMeta();
         itemMeta.addEnchant(Enchantment.SILK_TOUCH, 3, false);
-        itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "Enchanté avec Toucher de Soie"));
+        itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "EnchantÃ© avec Toucher de Soie"));
         silkTouchBook.setItemMeta(itemMeta);
         VoteManager.droppableItemsList.add(new DroppableItem(silkTouchBook, 0.09));
 	}
@@ -138,7 +138,7 @@ public class CustomItems
 	{
 		rawBear = new ItemStack(Material.BEEF);
         ItemMeta itemMeta = rawBear.getItemMeta();
-        itemMeta.setDisplayName("§fOurs Cru");
+        itemMeta.setDisplayName("Â§fOurs Cru");
         itemMeta.setLocalizedName("rawBear");
         itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "Cette viande semble se cuire au feu de camp"));
         itemMeta.setCustomModelData(2);
@@ -148,7 +148,7 @@ public class CustomItems
 	{
 		rawHorse = new ItemStack(Material.BEEF);
         ItemMeta itemMeta = rawHorse.getItemMeta();
-        itemMeta.setDisplayName("§fCheval Cru");
+        itemMeta.setDisplayName("Â§fCheval Cru");
         itemMeta.setLore(Arrays.asList(ChatColor.YELLOW + "Cette viande semble se cuire au feu de camp"));
         itemMeta.setCustomModelData(1);
         rawHorse.setItemMeta(itemMeta);
@@ -157,7 +157,7 @@ public class CustomItems
 	{
 		cookedBear = new ItemStack(Material.COOKED_BEEF);
         ItemMeta itemMeta = cookedBear.getItemMeta();
-        itemMeta.setDisplayName("§fOurs Cuit");
+        itemMeta.setDisplayName("Â§fOurs Cuit");
         itemMeta.setLocalizedName("cookedBear");
         itemMeta.setCustomModelData(2);
         cookedBear.setItemMeta(itemMeta);
@@ -166,7 +166,7 @@ public class CustomItems
 	{
 		cookedHorse = new ItemStack(Material.COOKED_BEEF);
         ItemMeta itemMeta = cookedHorse.getItemMeta();
-        itemMeta.setDisplayName("§fCheval Cuit");
+        itemMeta.setDisplayName("Â§fCheval Cuit");
         itemMeta.setCustomModelData(1);
         cookedHorse.setItemMeta(itemMeta);
 	}
@@ -180,8 +180,8 @@ public class CustomItems
 		itemMeta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(UUID.fromString("10cea9ed-2627-4a6e-b904-52228bbff57b"), "generic.attackDamage", 4, Operation.ADD_NUMBER, EquipmentSlot.OFF_HAND));
 		itemMeta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED, new AttributeModifier(UUID.fromString("48c680ff-6d3a-4bff-b62c-2badd65cf045"), "generic.attackSpeed", -0.65, Operation.MULTIPLY_SCALAR_1, EquipmentSlot.OFF_HAND));
 		itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
-		itemMeta.setDisplayName("§bUlu");
-		itemMeta.setLore(Arrays.asList("§eUn couteau inuit", "§epermettant de", "§edépecer un ours"));
+		itemMeta.setDisplayName("Â§bUlu");
+		itemMeta.setLore(Arrays.asList("Â§eUn couteau inuit", "Â§epermettant de", "Â§edÃ©pecer un ours"));
 		itemMeta.setCustomModelData(1);
 		ULU.setItemMeta(itemMeta);
 		VoteManager.droppableItemsList.add(new DroppableItem(ULU, 0.18));
@@ -192,8 +192,8 @@ public class CustomItems
         ItemMeta itemMeta = indianSpears.getItemMeta();
 
 		itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
-		itemMeta.setDisplayName("§bLance Indienne");
-		itemMeta.setLore(Arrays.asList("§ePermet d'obtenir du", "§esteak de cheval"));
+		itemMeta.setDisplayName("Â§bLance Indienne");
+		itemMeta.setLore(Arrays.asList("Â§ePermet d'obtenir du", "Â§esteak de cheval"));
 		itemMeta.setCustomModelData(1);
 		indianSpears.setItemMeta(itemMeta);
 		VoteManager.droppableItemsList.add(new DroppableItem(indianSpears, 0.21));
