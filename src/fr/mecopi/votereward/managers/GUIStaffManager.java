@@ -112,7 +112,7 @@ public class GUIStaffManager
 				}
 				if(player.hasPermission(Permissions.addItem) || player.hasPermission(Permissions.subItem) || player.hasPermission(Permissions.delItem) || player.hasPermission(Permissions.putItem))
 				{
-					player.sendMessage(VoteManager.sendErrorMessage("Vous ne pouvez pas touchez aux potions personnalisées."));
+					player.sendMessage(VoteManager.sendErrorMessage("Vous ne pouvez pas touchez aux potions personnalisÃ©es."));
 				}
 			}
 		}

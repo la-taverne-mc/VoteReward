@@ -33,7 +33,7 @@ public class RVBag implements CommandExecutor
 				if(player.hasPermission(Permissions.seeOtherBag))
 				{
 					if(!(new File(FileManager.bagsFolder.getPath().concat("/" + player.getName() + ".yml")).exists()))
-						player.sendMessage(VoteManager.sendErrorMessage("Ce joueur ne possède pas de sac de récompenses"));
+						player.sendMessage(VoteManager.sendErrorMessage("Ce joueur ne possÃ¨de pas de sac de rÃ©compenses"));
 					else if(Bukkit.getOfflinePlayer(Arguments[0]) == null)
 					{
 						player.sendMessage(VoteManager.sendErrorMessage("Le joueur est introuvable."));

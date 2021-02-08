@@ -45,7 +45,7 @@ public class EventsManager implements Listener
 				e.setCancelled(true);
 				Effect playerEffect = VoteManager.getEffectByPlayer(e.getPlayer().getUniqueId());
 				Bukkit.getScheduler().cancelTask(playerEffect.getTask().taskID);
-				VoteManager.sendBarMessage(e.getPlayer(), ChatColor.translateAlternateColorCodes('&', "&cVous êtes déjà sous l'effet d'une potion."));
+				VoteManager.sendBarMessage(e.getPlayer(), ChatColor.translateAlternateColorCodes('&', "&cVous Ãªtes dÃ©jÃ  sous l'effet d'une potion."));
 				playerEffect.setRemainingTime(playerEffect.getRemainingTime() - 2);
 				Bukkit.getScheduler().runTaskLater(Main.Instance, () -> playerEffect.getTask().addTask(playerEffect), (20 * 2));
 			}
@@ -144,7 +144,7 @@ public class EventsManager implements Listener
 			}
 		}
 	}
-	@EventHandler
+	@EventHandler(priority = EventPriority.LOWEST)
 	public void onClick(InventoryClickEvent e)
 	{
 		if(e.getWhoClicked() instanceof Player)
@@ -172,7 +172,7 @@ public class EventsManager implements Listener
 		if(VoteManager.getEffectByPlayer(e.getEntity().getUniqueId()) != null)
 			VoteManager.getEffectByPlayer(e.getEntity().getUniqueId()).getTask().disableEffect();
 	}
-	@EventHandler
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onCloseInventory(InventoryCloseEvent e)
 	{
 		if(e.getPlayer() instanceof Player)
